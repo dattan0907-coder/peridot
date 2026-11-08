@@ -12,10 +12,19 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
  *   assets/peridot_scout/geo/entity/peridot_scout.geo.json
  *   assets/peridot_scout/animations/entity/peridot_scout.animation.json
  *   assets/peridot_scout/textures/entity/peridot_scout.png
+ *   assets/peridot_scout/textures/entity/peridot_scout_dead.png  (used while dying)
  */
 public class PeridotScoutRenderer extends GeoEntityRenderer<PeridotScoutEntity> {
+    private static final ResourceLocation DEAD_TEXTURE =
+            ResourceLocation.fromNamespaceAndPath(PeridotScoutMod.MODID, "textures/entity/peridot_scout_dead.png");
+
     public PeridotScoutRenderer(EntityRendererProvider.Context context) {
         super(context, new DefaultedEntityGeoModel<>(
                 ResourceLocation.fromNamespaceAndPath(PeridotScoutMod.MODID, "peridot_scout"), true));
+    }
+
+    @Override
+    public ResourceLocation getTextureLocation(PeridotScoutEntity entity) {
+        return entity.isDeadOrDying() ? DEAD_TEXTURE : super.getTextureLocation(entity);
     }
 }

@@ -7,7 +7,8 @@
 ## Assets
 - `assets/peridot_scout/geo/entity/peridot_scout.geo.json`
 - `assets/peridot_scout/animations/entity/peridot_scout.animation.json`
-- `assets/peridot_scout/textures/entity/peridot_scout.png`  <- PLACEHOLDER (256x256), replace with your real texture
+- `assets/peridot_scout/textures/entity/peridot_scout.png`  (256x256)
+- `assets/peridot_scout/textures/entity/peridot_scout_dead.png`  <- swapped in while the death animation plays
 
 ## Animations
 - idle / walk / run (aggressive) / swim (in water) / death: automatic
