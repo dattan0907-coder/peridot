@@ -1,0 +1,35 @@
+{
+  "entity.peridot_scout.ambient": {
+    "subtitle": "subtitles.entity.peridot_scout.ambient",
+    "sounds": [
+      { "name": "peridot_scout:entity/ambient1", "volume": 0.9 },
+      { "name": "peridot_scout:entity/ambient2", "volume": 0.9 }
+    ]
+  },
+  "entity.peridot_scout.hurt": {
+    "subtitle": "subtitles.entity.peridot_scout.hurt",
+    "sounds": [
+      "peridot_scout:entity/hurt1",
+      "peridot_scout:entity/hurt2"
+    ]
+  },
+  "entity.peridot_scout.death": {
+    "subtitle": "subtitles.entity.peridot_scout.death",
+    "sounds": [ "peridot_scout:entity/death" ]
+  },
+  "entity.peridot_scout.step": {
+    "subtitle": "subtitles.entity.peridot_scout.step",
+    "sounds": [
+      { "name": "peridot_scout:entity/step1", "volume": 0.6 },
+      { "name": "peridot_scout:entity/step2", "volume": 0.6 }
+    ]
+  },
+  "entity.peridot_scout.roar": {
+    "subtitle": "subtitles.entity.peridot_scout.roar",
+    "sounds": [ "peridot_scout:entity/roar" ]
+  },
+  "entity.peridot_scout.scan": {
+    "subtitle": "subtitles.entity.peridot_scout.scan",
+    "sounds": [ "peridot_scout:entity/scan" ]
+  }
+}

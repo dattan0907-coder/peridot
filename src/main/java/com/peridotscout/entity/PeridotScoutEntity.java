@@ -1,8 +1,8 @@
 package com.peridotscout.entity;
 
+import com.peridotscout.registry.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
@@ -81,6 +81,8 @@ public class PeridotScoutEntity extends Monster implements GeoEntity {
                 && this.getDeltaMovement().horizontalDistanceSqr() < 1.0E-4
                 && this.getRandom().nextInt(600) == 0) {
             this.triggerAnim("action", "scan");
+            this.level().playSound(null, this.blockPosition(), ModSounds.SCAN.get(),
+                    SoundSource.HOSTILE, 0.8F, 1.0F);
         }
     }
 
@@ -90,8 +92,8 @@ public class PeridotScoutEntity extends Monster implements GeoEntity {
         super.setTarget(target);
         if (newTarget && !this.level().isClientSide) {
             this.triggerAnim("action", "roar");
-            this.level().playSound(null, this.blockPosition(), SoundEvents.RAVAGER_ROAR,
-                    SoundSource.HOSTILE, 1.0F, 1.2F);
+            this.level().playSound(null, this.blockPosition(), ModSounds.ROAR.get(),
+                    SoundSource.HOSTILE, 1.0F, 1.0F);
         }
     }
 
@@ -119,25 +121,25 @@ public class PeridotScoutEntity extends Monster implements GeoEntity {
         }
     }
 
-    // ---- sounds (vanilla ravager placeholders) ----
+    // ---- sounds (see sounds.json) ----
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.RAVAGER_AMBIENT;
+        return ModSounds.AMBIENT.get();
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.RAVAGER_HURT;
+        return ModSounds.HURT.get();
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.RAVAGER_DEATH;
+        return ModSounds.DEATH.get();
     }
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
-        this.playSound(SoundEvents.RAVAGER_STEP, 0.15F, 1.0F);
+        this.playSound(ModSounds.STEP.get(), 0.5F, 1.0F);
     }
 
     // ---- GeckoLib ----

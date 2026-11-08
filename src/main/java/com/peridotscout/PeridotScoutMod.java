@@ -3,6 +3,7 @@ package com.peridotscout;
 import com.peridotscout.entity.PeridotScoutEntity;
 import com.peridotscout.registry.ModEntities;
 import com.peridotscout.registry.ModItems;
+import com.peridotscout.registry.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -16,6 +17,7 @@ public class PeridotScoutMod {
     public PeridotScoutMod(IEventBus modEventBus) {
         ModEntities.ENTITIES.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModSounds.SOUNDS.register(modEventBus);
 
         modEventBus.addListener(this::registerAttributes);
         modEventBus.addListener(this::buildCreativeTabs);

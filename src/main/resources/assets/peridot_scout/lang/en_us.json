@@ -1,4 +1,10 @@
 {
   "entity.peridot_scout.peridot_scout": "Peridot Scout",
-  "item.peridot_scout.peridot_scout_spawn_egg": "Peridot Scout Spawn Egg"
+  "item.peridot_scout.peridot_scout_spawn_egg": "Peridot Scout Spawn Egg",
+  "subtitles.entity.peridot_scout.ambient": "Peridot Scout chitters",
+  "subtitles.entity.peridot_scout.hurt": "Peridot Scout hurts",
+  "subtitles.entity.peridot_scout.death": "Peridot Scout dies",
+  "subtitles.entity.peridot_scout.step": "Peridot Scout steps",
+  "subtitles.entity.peridot_scout.roar": "Peridot Scout roars",
+  "subtitles.entity.peridot_scout.scan": "Peridot Scout scans"
 }

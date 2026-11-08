@@ -20,3 +20,8 @@
 ## Build
 GitHub Actions builds on every push (`.github/workflows/build.yml`). The jar is in the run's artifacts.
 Release: `git tag v1.0.0 && git push --tags`
+
+## Sounds
+Generated placeholder sounds (mono OGG Vorbis) in `assets/peridot_scout/sounds/entity/`,
+mapped in `assets/peridot_scout/sounds.json`: ambient (x2), hurt (x2), death, step (x2), roar, scan.
+Replace any `.ogg` with your own file of the same name to change a sound.

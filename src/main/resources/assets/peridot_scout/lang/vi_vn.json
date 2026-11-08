@@ -1,4 +1,10 @@
 {
   "entity.peridot_scout.peridot_scout": "Peridot Trinh Sát",
-  "item.peridot_scout.peridot_scout_spawn_egg": "Trứng Sinh Peridot Trinh Sát"
+  "item.peridot_scout.peridot_scout_spawn_egg": "Trứng Sinh Peridot Trinh Sát",
+  "subtitles.entity.peridot_scout.ambient": "Peridot Trinh Sát kêu lách cách",
+  "subtitles.entity.peridot_scout.hurt": "Peridot Trinh Sát bị thương",
+  "subtitles.entity.peridot_scout.death": "Peridot Trinh Sát chết",
+  "subtitles.entity.peridot_scout.step": "Peridot Trinh Sát bước đi",
+  "subtitles.entity.peridot_scout.roar": "Peridot Trinh Sát gầm",
+  "subtitles.entity.peridot_scout.scan": "Peridot Trinh Sát quét"
 }
