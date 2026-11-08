@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "peridot_scout"
+version = "1.0.0"
+displayName = "Peridot Scout"
+description = '''
+Peridot Scout mob, animated with GeckoLib.
+'''
+
+[[dependencies.peridot_scout]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.220,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.peridot_scout]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.peridot_scout]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.7,)"
+ordering = "AFTER"
+side = "BOTH"
